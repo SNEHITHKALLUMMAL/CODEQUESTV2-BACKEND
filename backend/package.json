@@ -2,15 +2,18 @@
   "name": "codequest-lms-backend",
   "version": "1.0.0",
   "private": true,
-  "main": "dist/backend/src/server.js",
+  "main": "dist/src/server.js",
   "scripts": {
     "dev": "nodemon --exec ts-node --files src/server.ts",
     "build": "tsc -p tsconfig.json",
-    "start": "node dist/backend/src/server.js",
+    "start": "node dist/src/server.js",
     "seed": "ts-node scripts/seed/run.ts",
     "seed:destroy": "ts-node scripts/seed/run.ts --destroy",
     "lint": "eslint .",
     "test": "jest"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
