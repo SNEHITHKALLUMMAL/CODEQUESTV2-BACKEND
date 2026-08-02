@@ -1,0 +1,28 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.v1Router = void 0;
+const express_1 = require("express");
+const health_routes_1 = require("./health.routes");
+const auth_routes_1 = require("./auth.routes");
+const course_routes_1 = require("./course.routes");
+const module_routes_1 = require("./module.routes");
+const topic_routes_1 = require("./topic.routes");
+const practical_routes_1 = require("./practical.routes");
+const progress_routes_1 = require("./progress.routes");
+const note_routes_1 = require("./note.routes");
+const certificate_routes_1 = require("./certificate.routes");
+const quiz_routes_1 = require("./quiz.routes");
+const index_1 = require("./admin/index");
+exports.v1Router = (0, express_1.Router)();
+exports.v1Router.use("/health", health_routes_1.healthRouter);
+exports.v1Router.use("/auth", auth_routes_1.authRouter);
+exports.v1Router.use("/courses", course_routes_1.courseRouter);
+exports.v1Router.use("/modules", module_routes_1.moduleRouter);
+exports.v1Router.use("/topics", topic_routes_1.topicRouter);
+exports.v1Router.use("/practicals", practical_routes_1.practicalRouter);
+exports.v1Router.use("/progress", progress_routes_1.progressRouter);
+exports.v1Router.use("/notes", note_routes_1.noteRouter);
+exports.v1Router.use("/certificates", certificate_routes_1.certificateRouter);
+exports.v1Router.use("/quizzes", quiz_routes_1.quizRouter);
+exports.v1Router.use("/admin", index_1.adminRouter);
+//# sourceMappingURL=index.js.map
