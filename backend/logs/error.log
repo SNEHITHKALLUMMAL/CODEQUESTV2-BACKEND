@@ -1,0 +1,9 @@
+2026-08-04T11:13:54.138Z [error]: Failed to connect to MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2026-08-05T02:44:27.595Z [error]: MongooseError: Operation `courses.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/home/claude/codequest-v2/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:585:17)
+    at processTimers (node:internal/timers:521:7)
+2026-08-05T02:44:37.619Z [error]: MongooseError: Operation `courses.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/home/claude/codequest-v2/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:585:17)
+    at processTimers (node:internal/timers:521:7)

@@ -1,0 +1,11 @@
+2026-08-04T11:13:54.135Z [warn]: MongoDB disconnected
+2026-08-05T02:44:27.595Z [error]: MongooseError: Operation `courses.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/home/claude/codequest-v2/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:585:17)
+    at processTimers (node:internal/timers:521:7)
+2026-08-05T02:44:27.603Z [info]: 127.0.0.1 - - [05/Aug/2026:02:44:27 +0000] "GET /api/v1/courses/html HTTP/1.1" 500 63 "-" "-"
+2026-08-05T02:44:37.619Z [error]: MongooseError: Operation `courses.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/home/claude/codequest-v2/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:585:17)
+    at processTimers (node:internal/timers:521:7)
+2026-08-05T02:44:37.620Z [info]: 127.0.0.1 - - [05/Aug/2026:02:44:37 +0000] "GET /api/v1/courses/html HTTP/1.1" 500 63 "-" "-"
